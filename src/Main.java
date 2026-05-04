@@ -1,13 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+    final List<String> ShapesList = new ArrayList<>() {{
+        add("Orange Ricky"); // L, smaller line on the right
+        add("Blue Ricky"); // J, smaller line on the left
+        add("Cleveland Z"); // bottom 2 more to the right
+        add("Rhode Island Z"); // bottom 2 more to the left
+        add("Hero"); // flat 4
+        add("Teewee"); // T shape, pyramid,
+        add("Smashboy"); // square, box
+    }};
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+    /*
+    * =====  KOLORY =====
+    * tło gry           ConsoleFormatter.BLACK_BACKGROUND
+    * Hero Block        ConsoleFormatter.BRIGHT_CYAN_BACKGROUND
+    * Blue Ricky Block  ConsoleFormatter.BRIGHT_BLUE_BACKGROUND
+    * Orange Ricky      ConsoleFormatter.ORANGE_BACKGROUND
+    * Teewee Block      ConsoleFormatter.BRIGHT_PURPLE_BACKGROUND
+    * Sun Block         ConsoleFormatter.BRIGHT_YELLOW_BACKGROUND
+    * Rhode Island Z    ConsoleFormatter.BRIGHT_GREEN_BACKGROUND
+    * Cleveland Island  ConsoleFormatter.BRIGHT_RED_BACKGROUND
+    * */
+
+    System.out.println(ConsoleFormatter.getBlocks(ConsoleFormatter.RED, 5));
 }
