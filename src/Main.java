@@ -9,17 +9,59 @@ void main() {
         add("Smashboy"); // square, box
     }};
 
+    enum Shape {
+        OrangeRicky,
+        BlueRicky,
+        ClevelandZ,
+        RhodeIslandZ,
+        Hero,
+        Teewee,
+        Smashboy
+    }
+
     /*
-    * =====  KOLORY =====
-    * tło gry           ConsoleFormatter.BLACK_BACKGROUND
-    * Hero Block        ConsoleFormatter.BRIGHT_CYAN_BACKGROUND
-    * Blue Ricky Block  ConsoleFormatter.BRIGHT_BLUE_BACKGROUND
-    * Orange Ricky      ConsoleFormatter.ORANGE_BACKGROUND
-    * Teewee Block      ConsoleFormatter.BRIGHT_PURPLE_BACKGROUND
-    * Sun Block         ConsoleFormatter.BRIGHT_YELLOW_BACKGROUND
-    * Rhode Island Z    ConsoleFormatter.BRIGHT_GREEN_BACKGROUND
-    * Cleveland Island  ConsoleFormatter.BRIGHT_RED_BACKGROUND
-    * */
+     * =====  KOLORY =====
+     * tło gry           ConsoleFormatter.BLACK_BACKGROUND
+     * Hero Block        ConsoleFormatter.BRIGHT_CYAN_BACKGROUND
+     * Blue Ricky Block  ConsoleFormatter.BRIGHT_BLUE_BACKGROUND
+     * Orange Ricky      ConsoleFormatter.ORANGE_BACKGROUND
+     * Teewee Block      ConsoleFormatter.BRIGHT_PURPLE_BACKGROUND
+     * Sun Block         ConsoleFormatter.BRIGHT_YELLOW_BACKGROUND
+     * Rhode Island Z    ConsoleFormatter.BRIGHT_GREEN_BACKGROUND
+     * Cleveland Island  ConsoleFormatter.BRIGHT_RED_BACKGROUND
+     * */
 
     System.out.println(ConsoleFormatter.getBlocks(ConsoleFormatter.RED, 5));
 }
+
+/*
+CENTRAL POSITIONS
+- Orange Ricky
+⬛
+⬛
+⬜⬛
+
+- Blue Ricky
+  ⬛
+  ⬛
+⬛⬜
+
+- Cleveland Z
+⬛⬛
+  ⬜⬛
+
+- Rhode Island Z
+  ⬛⬛
+⬛⬜
+
+- Hero
+⬛⬛⬜⬛
+
+- Teewee
+  ⬛
+⬛⬜⬛
+
+- Smashboy
+⬛⬛
+⬜⬛
+ */
