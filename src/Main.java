@@ -9,16 +9,6 @@ void main() {
         add("Smashboy"); // square, box
     }};
 
-    enum Shape {
-        OrangeRicky,
-        BlueRicky,
-        ClevelandZ,
-        RhodeIslandZ,
-        Hero,
-        Teewee,
-        Smashboy
-    }
-
     /*
      * =====  KOLORY =====
      * tło gry           ConsoleFormatter.BLACK_BACKGROUND
@@ -37,14 +27,13 @@ void main() {
 /*
 CENTRAL POSITIONS
 - Orange Ricky
-⬛
-⬛
-⬜⬛
+
+    ⬛
+⬛⬛⬜
 
 - Blue Ricky
-  ⬛
-  ⬛
-⬛⬜
+⬛⬛⬜
+    ⬛
 
 - Cleveland Z
 ⬛⬛
